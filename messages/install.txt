@@ -1,0 +1,10 @@
+SublimeLinter-contrib-bashate
+-------------------------------
+This linter plugin for SublimeLinter provides an interface to bashate.
+
+** IMPORTANT! **
+
+Before this plugin will activate, you *must*
+follow the installation instructions here:
+
+https://github.com/Ben Stoutenburgh/SublimeLinter-contrib-bashate
