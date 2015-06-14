@@ -10,7 +10,7 @@
 
 """This module exports the Bashate plugin class."""
 
-from SublimeLinter.lint import Linter, util
+from SublimeLinter.lint import Linter
 
 
 class Bashate(Linter):
@@ -27,4 +27,3 @@ class Bashate(Linter):
     multiline = True
     tempfile_suffix = '-'
     check_version = False
-
