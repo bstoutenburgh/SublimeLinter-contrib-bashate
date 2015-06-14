@@ -1,7 +1,7 @@
 SublimeLinter-contrib-bashate
 ================================
 
-[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-bashate.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-bashate)
+[![Build Status](https://travis-ci.org/maristgeek/SublimeLinter-contrib-bashate.svg?branch=master)](https://travis-ci.org/maristgeek/SublimeLinter-contrib-bashate)
 
 This linter plugin for [SublimeLinter][docs] provides an interface to [bashate](https://pypi.python.org/pypi/bashate). It will be used with files that have the “Shell Script (Bash)” syntax.
 
