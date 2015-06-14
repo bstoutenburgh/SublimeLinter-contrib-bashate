@@ -18,9 +18,6 @@ Before using this plugin, you must ensure that `bashate` is installed on your sy
    [sudo] pip-3.x install bashate
    ```
 
-
-**Note:** This plugin requires `bashate` __version__ or later.
-
 ### Linter configuration
 In order for `bashate` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
 
@@ -36,6 +33,7 @@ To install via Package Control, do the following:
 1. Within Sublime Text, bring up the [Command Palette][cmd] and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
 
 1. When the plugin list appears, type `bashate`. Among the entries you should see `SublimeLinter-contrib-bashate`. If that entry is not highlighted, use the keyboard or mouse to select it.
+
 -->
 
 ## Settings
@@ -46,7 +44,6 @@ In addition to the standard SublimeLinter settings, SublimeLinter-contrib-bashat
 |Setting|Description|Inline Setting|Inline Override|
 |:------|:----------|:------------:|:-------------:|
 |ignore|Rules to ignore (not implemented yet).| | |
-|bar|Something else.| | |
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
