@@ -24,5 +24,5 @@ class Bashate(Linter):
         r'\'(?P<near>.+)\'\n - (?P<file>.+) : L(?P<line>\d+)'
     )
     multiline = True
-    tempfile_suffix = '-'
+    tempfile_suffix = 'sh'
     check_version = False
