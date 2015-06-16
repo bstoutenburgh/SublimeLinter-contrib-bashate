@@ -20,9 +20,8 @@ class Bashate(Linter):
     syntax = 'shell-unix-generic'
     cmd = 'bashate'
     regex = (
-        r'^(?:(?P<error>[E])|(?P<warning>[W]))\d+: '
-        r'(?P<message>.+): \'(?P<near>.+)\'\n - '
-        r'(?P<file>.+) : L(?P<line>\d+)'
+        r'^(?P<error>[E])\d+: (?P<message>.+): '
+        r'\'(?P<near>.+)\'\n - (?P<file>.+) : L(?P<line>\d+)'
     )
     multiline = True
     tempfile_suffix = '-'
