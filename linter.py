@@ -21,7 +21,7 @@ class Bashate(Linter):
     cmd = 'bashate'
     comment_re = r'\s*#'
     regex = (
-        r'^(?P<error>[E])\d+: (?P<message>.+): '
+        r'^(\[[EW]\])? (?P<error>[E])\d+: (?P<message>.+): '
         r'\'(?P<near>.+)\'\n - (?P<file>.+) : L(?P<line>\d+)'
     )
     multiline = True
