@@ -19,10 +19,15 @@ class Bashate(Linter):
 
     syntax = 'shell-unix-generic'
     cmd = 'bashate'
+    comment_re = r'\s*#'
     regex = (
         r'^(?P<error>[E])\d+: (?P<message>.+): '
         r'\'(?P<near>.+)\'\n - (?P<file>.+) : L(?P<line>\d+)'
     )
     multiline = True
+    defaults = {
+        '--ignore=,': ''
+    }
+    inline_overrides = ('ignore')
     tempfile_suffix = 'sh'
     check_version = False

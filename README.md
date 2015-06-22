@@ -43,7 +43,7 @@ In addition to the standard SublimeLinter settings, SublimeLinter-contrib-bashat
 
 |Setting|Description|Inline Setting|Inline Override|
 |:------|:----------|:------------:|:-------------:|
-|ignore|Rules to ignore (not implemented yet).| | |
+|ignore|A comma-separated list of error codes to ignore| |&#10003;|
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
