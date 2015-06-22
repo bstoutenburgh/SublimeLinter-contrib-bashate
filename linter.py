@@ -27,8 +27,10 @@ class Bashate(Linter):
     )
     multiline = True
     defaults = {
-        '--ignore=,': ''
+        '--ignore=,': '',
+        '--warn=,': '',
+        '--error=,': ''
     }
-    inline_overrides = ('ignore')
+    inline_overrides = ('ignore', 'warn', 'error')
     tempfile_suffix = 'sh'
     check_version = False
