@@ -14,7 +14,6 @@ from SublimeLinter.lint import Linter
 
 
 class Bashate(Linter):
-
     """Provides an interface to bashate."""
 
     syntax = 'shell-unix-generic'
