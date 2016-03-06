@@ -20,13 +20,16 @@ class Bashate(Linter):
     cmd = 'bashate'
     comment_re = r'\s*#'
     regex = (
-        r'^(\[[EW]\])? (?P<error>[E])\d+: (?P<message>.+): '
-        r'\'(?P<near>.+)\'\n - (?P<file>.+) : L(?P<line>\d+)'
+        r'^\[(?:(?P<error>E)|(?P<warning>W))\] E\d+: '
+        r'(?P<message>.+): \'(?P<near>.+)\'\n - '
+        r'.+ : L(?P<line>\d+)'
     )
     multiline = True
     defaults = {
-        '--ignore=,': ''
+        '--ignore=,': '',
+        '--warn=,': '',
+        '--error=,': ''
     }
-    inline_overrides = ('ignore')
+    inline_overrides = ('ignore', 'warn', 'error')
     tempfile_suffix = 'sh'
     check_version = False

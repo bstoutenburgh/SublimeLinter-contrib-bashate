@@ -44,6 +44,8 @@ In addition to the standard SublimeLinter settings, SublimeLinter-contrib-bashat
 |Setting|Description|Inline Setting|Inline Override|
 |:------|:----------|:------------:|:-------------:|
 |ignore|A comma-separated list of error codes to ignore| |&#10003;|
+|warn|A comma-separated list of rules to always warn (rather than error)| | &#10003; |
+|error|A comma-separated list of rules to always error (rather than warn)| | &#10003; |
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
