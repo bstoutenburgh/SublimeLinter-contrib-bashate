@@ -11,6 +11,7 @@
 """This module exports the Bashate plugin class."""
 
 from SublimeLinter.lint import Linter
+import os
 
 
 class Bashate(Linter):
@@ -33,3 +34,15 @@ class Bashate(Linter):
     inline_overrides = ('ignore', 'warn', 'error')
     tempfile_suffix = 'sh'
     check_version = False
+
+    def tmpfile(self, cmd, code, suffix=''):
+        """
+        Run an external executable using a temp file to pass code and return its output.
+
+        We override this to have the tmpfile extension match what is being
+        linted so E005 is valid.
+        """
+
+        filename, extension = os.path.splitext(self.filename)
+        extension = '.missingextension' if not extension else extension
+        return super().tmpfile(cmd, code, extension)
