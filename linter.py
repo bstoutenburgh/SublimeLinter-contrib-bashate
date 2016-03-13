@@ -22,7 +22,7 @@ class Bashate(Linter):
     comment_re = r'\s*#'
     regex = (
         r'^\[(?:(?P<error>E)|(?P<warning>W))\] E\d+: '
-        r'(?P<message>.+): \'(?P<near>.+)\'\n - '
+        r'(?P<message>.+): \'(?P<near>[^\']+)\'\n - '
         r'.+ : L(?P<line>\d+)'
     )
     multiline = True
