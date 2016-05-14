@@ -3,7 +3,7 @@
 # Linter for SublimeLinter3, a code checking framework for Sublime Text 3
 #
 # Written by Ben Stoutenburgh
-# Copyright (c) 2015 Ben Stoutenburgh
+# Copyright (c) 2016 Ben Stoutenburgh
 #
 # License: MIT
 #
