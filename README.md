@@ -55,7 +55,7 @@ If you would like to contribute enhancements or fixes, please do the following:
 Please note that modifications should follow these coding guidelines:
 
 - Indent is 4 spaces.
-- Code should pass flake8 and pep257 linters.
+- Code should pass flake8 and pydocstyle linters.
 - Vertical whitespace helps readability, don’t be afraid to use it.
 - Please use descriptive variable names, no abbreviations unless they are very well known.
 
