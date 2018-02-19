@@ -1,0 +1,6 @@
+SublimeLinter-contrib-bashate
+-------------------------------
+Inline settings will be no longer be supported in SublimeLinter 4.
+Please migrate inline overrides to user settings or project configuration files.
+
+https://github.com/SublimeLinter/SublimeLinter3/blob/next/messages/4.0.0-rc.1.txt
