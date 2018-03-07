@@ -31,7 +31,6 @@ class Bashate(Linter):
         '--warn=,': '',
         '--error=,': ''
     }
-    inline_overrides = ('ignore', 'warn', 'error')
     tempfile_suffix = 'sh'
     check_version = False
 

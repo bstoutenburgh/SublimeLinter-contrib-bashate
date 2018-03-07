@@ -1,0 +1,8 @@
+SublimeLinter-contrib-bashate 1.1.0
+-----------------------------------
+
+With the release of SublimeLinter 4 underway, support for inilne settings have
+been completely removed now.
+
+For SL3 users, remember to migrate inline overrides to user settings or project
+configuration files.
