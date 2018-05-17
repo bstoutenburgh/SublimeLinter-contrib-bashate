@@ -17,7 +17,6 @@ import os
 class Bashate(Linter):
     """Provides an interface to bashate."""
 
-    syntax = 'shell-unix-generic'
     cmd = 'bashate'
     comment_re = r'\s*#'
     regex = (
@@ -27,6 +26,7 @@ class Bashate(Linter):
     )
     multiline = True
     defaults = {
+        'selector': 'source.shell.bash',
         '--ignore=,': '',
         '--warn=,': '',
         '--error=,': ''
