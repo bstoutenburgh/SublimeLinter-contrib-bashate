@@ -32,7 +32,6 @@ class Bashate(Linter):
         '--error=,': ''
     }
     tempfile_suffix = 'sh'
-    check_version = False
 
     def tmpfile(self, cmd, code, suffix=''):
         """
