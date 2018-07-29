@@ -20,11 +20,8 @@ class Bashate(Linter):
     cmd = 'bashate'
     comment_re = r'\s*#'
     regex = (
-        r'^\[(?:(?P<error>E)|(?P<warning>W))\] E\d+: '
-        r'(?P<message>.+): \'(?P<near>.+)?\'\n - '
-        r'.+ : L(?P<line>\d+)'
+        r'^.+:(?P<line>\d+):1: (?:(?P<error>E)|(?P<warning>W))\d{3} (?P<message>.+)'
     )
-    multiline = True
     defaults = {
         'selector': 'source.shell.bash',
         '--ignore=,': '',
