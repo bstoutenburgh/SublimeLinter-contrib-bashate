@@ -18,15 +18,15 @@ class Bashate(Linter):
     """Provides an interface to bashate."""
 
     cmd = 'bashate'
-    regex = (
-        r'^.+:(?P<line>\d+):1: (?:(?P<error>E)|(?P<warning>W))\d{3} (?P<message>.+)'
-    )
     defaults = {
         'selector': 'source.shell.bash',
         '--ignore=,': '',
         '--warn=,': '',
         '--error=,': ''
     }
+    regex = (
+        r'^.+:(?P<line>\d+):1: (?:(?P<error>E)|(?P<warning>W))\d{3} (?P<message>.+)'
+    )
     tempfile_suffix = 'sh'
 
     def tmpfile(self, cmd, code, suffix=''):
