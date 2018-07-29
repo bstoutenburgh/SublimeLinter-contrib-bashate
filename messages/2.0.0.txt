@@ -1,0 +1,10 @@
+SublimeLinter-contrib-bashate 2.0.0
+-----------------------------------
+
+bashate 0.6.0 or above is now required as the output format has changed. Be sure to update your installations.
+
+
+Known issues:
+- bashate 0.6.0 does not distinguish warnings from errors, so all hits will report as errors in SublimeLinter. This does in fact make the warn setting useless. Follow the upstream problem at https://bugs.launchpad.net/bash8/+bug/1782960.
+
+- bashate 0.6.0 reports all errors at column 1 and does not provide the offending line, so SublimeLinter will now highlight the first character or word of the offending line. Unless the upstream tool changes this behavior the options are to have that highlight or set the user setting "no_column_highlights_line". Still persuing hacks but do not expect any.
