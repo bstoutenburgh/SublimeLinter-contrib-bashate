@@ -18,7 +18,6 @@ class Bashate(Linter):
     """Provides an interface to bashate."""
 
     cmd = 'bashate'
-    comment_re = r'\s*#'
     regex = (
         r'^.+:(?P<line>\d+):1: (?:(?P<error>E)|(?P<warning>W))\d{3} (?P<message>.+)'
     )
@@ -29,7 +28,6 @@ class Bashate(Linter):
         '--error=,': ''
     }
     tempfile_suffix = 'sh'
-    check_version = False
 
     def tmpfile(self, cmd, code, suffix=''):
         """
